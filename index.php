@@ -31,7 +31,14 @@ switch ($action) {
         }
 
         // process the scores
-        // TODO: Add code that calculates the score total
+         $score_total = 0;
+         foreach ($scores as $s) {
+	             $scores_string .= $s . '|';
+		                 $score_total += $s;
+				         }
+
+
+// TODO: Add code that calculates the score total
         $scores_string = '';
         foreach ($scores as $s) {
             $scores_string .= $s . '|';
